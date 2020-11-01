@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lab3</string>
+    <string name="download">Download</string>
+    <string name="title">Title:</string>
+    <string name="description">Description:</string>
+    <string name="publish_date">Publish date:</string>
+    <string name="link">Link:</string>
+</resources>
