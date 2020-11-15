@@ -9,7 +9,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import androidx.annotation.RequiresApi
-import java.net.URI
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
 

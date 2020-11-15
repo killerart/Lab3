@@ -2,7 +2,6 @@ package com.example.lab3
 
 import android.content.Context
 import android.content.Intent
-import android.graphics.Paint
 import android.os.Build
 import android.view.LayoutInflater
 import android.view.View
@@ -12,8 +11,6 @@ import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.SortedList
 import androidx.recyclerview.widget.SortedListAdapterCallback
-import java.time.format.DateTimeFormatter
-import java.time.format.FormatStyle
 
 class ItemsAdapter(private val context: Context) : RecyclerView.Adapter<ItemsAdapter.ItemViewHolder>() {
     var itemSortedList: SortedList<Item>
@@ -59,7 +56,6 @@ class ItemsAdapter(private val context: Context) : RecyclerView.Adapter<ItemsAda
             itemName.text = item.title
         }
     }
-
 
     override fun getItemCount(): Int {
         return itemSortedList.size()
