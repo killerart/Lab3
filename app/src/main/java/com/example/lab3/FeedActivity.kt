@@ -48,11 +48,11 @@ class FeedActivity : AppCompatActivity() {
         val tempChannels = intent.getStringArrayExtra(SELECTED_CHANNELS)
         if (tempChannels is Array<String>) {
             selectedChannels = tempChannels
-//            delay(5000)
             val items = mutableListOf<Item>()
             var count = 0
             for (channel in selectedChannels) {
                 lifecycleScope.launch(Dispatchers.IO) {
+                    delay(5000)
                     val result = RssChannelReader.coRead(channel)
                     lifecycleScope.launch(Dispatchers.Default) {
                         items.addAll(result.items.map { item -> Item(item) })

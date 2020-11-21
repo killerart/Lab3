@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Lab3</string>
+    <string name="app_name">NY Times</string>
     <string name="download">Download</string>
     <string name="title">Title:</string>
     <string name="description">Description:</string>
